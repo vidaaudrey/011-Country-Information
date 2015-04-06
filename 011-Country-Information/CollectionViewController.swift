@@ -11,6 +11,7 @@ import UIKit
 class CollectionViewController: UIViewController {
 
     var items:[String: [AnyObject]]!
+    var dvcData: AnyObject! // store the data for destination view controller
 
     var dataSource:MultiSectionCollectionViewDataSource!
 
@@ -25,18 +26,21 @@ class CollectionViewController: UIViewController {
         
         items = objHandler.getCountriesDIctionaryWithContinentAnyObject()
         
-        self.dataSource = MultiSectionCollectionViewDataSource(items: self.items, cellIdentifier: "coCell", configureBlock: { (cell, item) -> () in
+        self.dataSource = MultiSectionCollectionViewDataSource(items: self.items, cellIdentifier: "coCell", viewController: self, segueIdentifier: "showDetail", configureBlock: { (cell, item) -> () in
             if let actualCell = cell as? CustomCollectionViewCell {
                 actualCell.configureForItem(item!)
             }
         })
 
         collectionView.dataSource = self.dataSource
-        
-        var array = objHandler.getCountryCodeArray().sorted {$0 < $1}.map{$0.lowercaseString}
-
+        collectionView.delegate = self.dataSource
         
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let dvc = segue.destinationViewController as? DetailTableViewController {
+            dvc.data = dvcData
+        }
+    }
 
 }

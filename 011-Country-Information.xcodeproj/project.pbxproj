@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7607B70E1AD1E7AA0064B517 /* MultiSectionCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607B70D1AD1E7A90064B517 /* MultiSectionCollectionViewDataSource.swift */; };
-		7615BD881AD25B4100A998DD /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7615BD871AD25B4100A998DD /* CountryDetailViewController.swift */; };
+		7624C0EF1AD3341100A12956 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624C0EE1AD3341100A12956 /* DetailTableViewController.swift */; };
+		7624C0F11AD3342600A12956 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624C0F01AD3342600A12956 /* MapViewController.swift */; };
 		765940951AD21A2F00BD6326 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765940941AD21A2F00BD6326 /* HeaderCollectionReusableView.swift */; };
 		76B586CD1AD1E64D00D5CAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B586CC1AD1E64D00D5CAE8 /* AppDelegate.swift */; };
 		76B586D21AD1E64D00D5CAE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B586D01AD1E64D00D5CAE8 /* Main.storyboard */; };
@@ -41,7 +42,8 @@
 
 /* Begin PBXFileReference section */
 		7607B70D1AD1E7A90064B517 /* MultiSectionCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiSectionCollectionViewDataSource.swift; sourceTree = "<group>"; };
-		7615BD871AD25B4100A998DD /* CountryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
+		7624C0EE1AD3341100A12956 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		7624C0F01AD3342600A12956 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		765940941AD21A2F00BD6326 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		76B586C71AD1E64D00D5CAE8 /* 011-Country-Information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "011-Country-Information.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B586CB1AD1E64D00D5CAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,12 +86,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7624C0ED1AD333DC00A12956 /* DetailTableView and MapView */ = {
+			isa = PBXGroup;
+			children = (
+				7624C0F01AD3342600A12956 /* MapViewController.swift */,
+				7624C0EE1AD3341100A12956 /* DetailTableViewController.swift */,
+			);
+			name = "DetailTableView and MapView";
+			sourceTree = "<group>";
+		};
 		76B586BE1AD1E64D00D5CAE8 = {
 			isa = PBXGroup;
 			children = (
 				76B586D31AD1E64D00D5CAE8 /* Images.xcassets */,
 				76B586D01AD1E64D00D5CAE8 /* Main.storyboard */,
-				7615BD871AD25B4100A998DD /* CountryDetailViewController.swift */,
 				76B586F91AD1E69F00D5CAE8 /* WordColor.swift */,
 				76B586C91AD1E64D00D5CAE8 /* 011-Country-Information */,
 				76B586DF1AD1E64D00D5CAE8 /* 011-Country-InformationTests */,
@@ -109,6 +119,7 @@
 		76B586C91AD1E64D00D5CAE8 /* 011-Country-Information */ = {
 			isa = PBXGroup;
 			children = (
+				7624C0ED1AD333DC00A12956 /* DetailTableView and MapView */,
 				76B586F81AD1E68E00D5CAE8 /* CollectionView */,
 				76E3A76F1AD1EBF600492A16 /* CountryProcess */,
 				76B586FF1AD1E6B300D5CAE8 /* Helper */,
@@ -282,10 +293,10 @@
 				765940951AD21A2F00BD6326 /* HeaderCollectionReusableView.swift in Sources */,
 				76B586FA1AD1E69F00D5CAE8 /* WordColor.swift in Sources */,
 				76B586FE1AD1E6AF00D5CAE8 /* MDColors.swift in Sources */,
-				7615BD881AD25B4100A998DD /* CountryDetailViewController.swift in Sources */,
 				76B586F51AD1E68400D5CAE8 /* CollectionViewController.swift in Sources */,
 				76B586F61AD1E68400D5CAE8 /* CustomCollectionViewCell.swift in Sources */,
 				76E3A7771AD1EC2A00492A16 /* GeneralExtensions.swift in Sources */,
+				7624C0EF1AD3341100A12956 /* DetailTableViewController.swift in Sources */,
 				76B586FD1AD1E6AF00D5CAE8 /* ColorExtension.swift in Sources */,
 				76E3A76E1AD1EBEC00492A16 /* StringExtension.swift in Sources */,
 				76E3A7731AD1EC1600492A16 /* CountryObjectHandler.swift in Sources */,
@@ -294,6 +305,7 @@
 				76E3A7711AD1EC0C00492A16 /* Country.swift in Sources */,
 				7607B70E1AD1E7AA0064B517 /* MultiSectionCollectionViewDataSource.swift in Sources */,
 				76E3A7791AD1EC4000492A16 /* DataFetchService.swift in Sources */,
+				7624C0F11AD3342600A12956 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

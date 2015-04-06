@@ -100,5 +100,6 @@ class CountryObjectHandler {
         
         return (continents, countriesInCountinent)
     }
-    
+
+    //  var array = objHandler.getCountryCodeArray().sorted {$0 < $1}.map{$0.lowercaseString}
 }

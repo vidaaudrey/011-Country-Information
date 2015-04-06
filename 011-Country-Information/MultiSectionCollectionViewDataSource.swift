@@ -19,11 +19,16 @@ class MultiSectionCollectionViewDataSource: NSObject, UICollectionViewDataSource
     var itemIdentifier:String?
     var configureCellBlock:CollectionViewCellConfigureBlock?
     
-    init(items: [String: [AnyObject]], cellIdentifier: String, configureBlock: CollectionViewCellConfigureBlock) {
- 
+    var viewController: AnyObject!
+    var segueIdentifier: String!
+    
+    init(items: [String: [AnyObject]], cellIdentifier: String, viewController: AnyObject, segueIdentifier:String, configureBlock: CollectionViewCellConfigureBlock) {
+        
         self.itemIdentifier = cellIdentifier
+        self.viewController = viewController
+        self.segueIdentifier = segueIdentifier
         self.configureCellBlock = configureBlock
-     //   super.init()
+        
         for (K,V) in items {
             if keys == nil {
                 self.items = [V]
@@ -70,9 +75,21 @@ class MultiSectionCollectionViewDataSource: NSObject, UICollectionViewDataSource
         }
     }
     
+    // must config the viewControllerType manually everytime. So far there is no way that I know of to directly get the class name of the object
+    
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        if let vc = viewController as? CollectionViewController {
+            vc.dvcData = items[indexPath.section][indexPath.row]
+            vc.performSegueWithIdentifier(segueIdentifier, sender: viewController)
+            
+        } else {
+            println("can not convert view controller")
+        }
+        
     }
+    
+
     
     func itemAtIndexPath(indexPath: NSIndexPath) -> AnyObject {
         return self.items[indexPath.section][indexPath.row]
