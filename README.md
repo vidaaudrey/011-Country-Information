@@ -8,10 +8,8 @@
 * How to use Static Cell with UITableView 
 * Use PDF vector image 
 
-![Snapshot 1](https://github.com/vidaaudrey/https://github.com/vidaaudrey/011-Country-Information/blob/master/_snapshot/snapshot.gif)
+![Snapshot 1](https://github.com/vidaaudrey/011-Country-Information/blob/master/_snapshot/snapshot.gif)
 
-![Snapshot 2](https://github.com/vidaaudrey/https://github.com/vidaaudrey/011-Country-Information/blob/master/_snapshot/snapshot.png)
-![Snapshot 3](https://github.com/vidaaudrey/https://github.com/vidaaudrey/011-Country-Information/blob/master/_snapshot/snapshot1.png)
-![Snapshot 3](https://github.com/vidaaudrey/https://github.com/vidaaudrey/011-Country-Information/blob/master/_snapshot/snapshot2.png)
+
 
 
