@@ -10,8 +10,8 @@ import UIKit
 
 class CollectionViewController: UIViewController {
 
-    var items:[String: [AnyObject]]!
-    var dvcData: AnyObject! // store the data for destination view controller
+    var items:[String: [AnyObject]]! // data for the UICollectionView
+    var dvcData: AnyObject! //  data for destinationViewController
 
     var dataSource:MultiSectionCollectionViewDataSource!
 
@@ -19,8 +19,6 @@ class CollectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         var objHandler = CountryObjectHandler(jsonFileName: "countries")
         

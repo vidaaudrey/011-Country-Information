@@ -28,9 +28,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         if let d = data as? [CLLocationDegrees] {
             latitude = d[1]
             longitude = d[0]
-            println(latitude)
-            println(longitude)
         }
+        
         //Core Location
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest

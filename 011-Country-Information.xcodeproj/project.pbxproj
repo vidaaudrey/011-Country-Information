@@ -19,7 +19,6 @@
 		76B586F51AD1E68400D5CAE8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B586F21AD1E68400D5CAE8 /* CollectionViewController.swift */; };
 		76B586F61AD1E68400D5CAE8 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B586F31AD1E68400D5CAE8 /* CustomCollectionViewCell.swift */; };
 		76B586F71AD1E68400D5CAE8 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B586F41AD1E68400D5CAE8 /* CollectionViewDataSource.swift */; };
-		76B586FA1AD1E69F00D5CAE8 /* WordColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B586F91AD1E69F00D5CAE8 /* WordColor.swift */; };
 		76B586FD1AD1E6AF00D5CAE8 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B586FB1AD1E6AF00D5CAE8 /* ColorExtension.swift */; };
 		76B586FE1AD1E6AF00D5CAE8 /* MDColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B586FC1AD1E6AF00D5CAE8 /* MDColors.swift */; };
 		76E3A76E1AD1EBEC00492A16 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E3A76D1AD1EBEC00492A16 /* StringExtension.swift */; };
@@ -57,7 +56,6 @@
 		76B586F21AD1E68400D5CAE8 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		76B586F31AD1E68400D5CAE8 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		76B586F41AD1E68400D5CAE8 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
-		76B586F91AD1E69F00D5CAE8 /* WordColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordColor.swift; sourceTree = "<group>"; };
 		76B586FB1AD1E6AF00D5CAE8 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		76B586FC1AD1E6AF00D5CAE8 /* MDColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDColors.swift; sourceTree = "<group>"; };
 		76E3A76D1AD1EBEC00492A16 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			children = (
 				76B586D31AD1E64D00D5CAE8 /* Images.xcassets */,
 				76B586D01AD1E64D00D5CAE8 /* Main.storyboard */,
-				76B586F91AD1E69F00D5CAE8 /* WordColor.swift */,
 				76B586C91AD1E64D00D5CAE8 /* 011-Country-Information */,
 				76B586DF1AD1E64D00D5CAE8 /* 011-Country-InformationTests */,
 				76B586C81AD1E64D00D5CAE8 /* Products */,
@@ -291,7 +288,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				765940951AD21A2F00BD6326 /* HeaderCollectionReusableView.swift in Sources */,
-				76B586FA1AD1E69F00D5CAE8 /* WordColor.swift in Sources */,
 				76B586FE1AD1E6AF00D5CAE8 /* MDColors.swift in Sources */,
 				76B586F51AD1E68400D5CAE8 /* CollectionViewController.swift in Sources */,
 				76B586F61AD1E68400D5CAE8 /* CustomCollectionViewCell.swift in Sources */,

@@ -27,7 +27,6 @@ class DetailTableViewController: UITableViewController {
         if let country = data as? Country {
             
             flagImageView.image = UIImage(named: country.countryCode.lowercaseString)
-            println("image\(country.countryCode.lowercaseString)")
             currencyCode.text = "Currency: \(country.currencyCode)"
             population.text = "Population: \(country.population)"
             areaInSqkm.text = "Total Area (SqKm):  \(country.areaInsqKm)"
