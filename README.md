@@ -10,6 +10,8 @@
 
 ![Snapshot 1](https://github.com/vidaaudrey/011-Country-Information/blob/master/_snapshot/snapshot.gif)
 
+[Flag Source](https://github.com/lipis/flag-icon-css )
+
 
 
 
